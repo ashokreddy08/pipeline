@@ -7,7 +7,7 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                
+                echo "this is compile stage"
                     sh 'mvn compile'
                 
             }
@@ -16,7 +16,7 @@ pipeline {
         stage ('Testing Stage') {
 
             steps {
-                
+                echo "This is testing stage"
                     sh 'mvn test'
                 
             }
@@ -25,7 +25,7 @@ pipeline {
 
         stage ('Deployment Stage') {
             steps {
-                
+                echo " This is deployment"
                     sh 'mvn deploy'
                 
             }
