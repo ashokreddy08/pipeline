@@ -1,9 +1,9 @@
-pipeline {
-    agent any 
-    stages {
-        stage('Example Build') {
-            steps {
-                sh 'mvn clean verify'
+pipeline { 
+    agent any  
+    stages { 
+        stage('Build') { 
+            steps { 
+               echo 'This is a minimal pipeline.' 
             }
         }
     }
