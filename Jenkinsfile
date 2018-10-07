@@ -7,17 +7,17 @@ pipeline {
     stages {
         stage ('Compile Stage') {
             steps {
-                sh "mvn compile"
+                bat "mvn compile"
                 }
               }
        stage ('Testing Stage') {
             steps {
-                sh "mvn test"
+                bat "mvn test"
                 }
              }
        stage ('Deployment Stage') {
             steps {
-                sh "mvn deploy"
+                bat "mvn deploy"
                 }
            }
       }
