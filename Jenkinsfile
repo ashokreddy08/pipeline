@@ -12,12 +12,12 @@ pipeline {
               }
        stage ('Testing Stage') {
             steps {
-                bat "mvn test"
+                bat "mvn -B test"
                 }
              }
        stage ('Deployment Stage') {
             steps {
-                bat "mvn deploy"
+                bat "mvn -B deploy"
                 }
            }
       }
