@@ -15,5 +15,10 @@ pipeline {
                 bat "mvn -B test"
                 }
              }
+        stage ('Deployment Stage') {
+            steps {
+                bat "mvn -B deploy"
+                }
+           }
       }
 }
